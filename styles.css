@@ -1,0 +1,48 @@
+:root {
+    --dk-grey: rgba(35, 40, 48, 1);
+    --cherry: rgba(255, 117, 117, 1);
+    --white: rgba(255, 255, 255, 1);
+    --gray: rgba(144, 144, 144, 1);
+
+    /* Recursive Font Family with Fallbacks */
+    --fonts: "Recursive", sans-serif;
+}
+
+body {
+    background-color: var(--dk-grey);
+    margin: 0;
+    font-weight: 400;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 9rem;
+}
+
+header h1 {
+    color: var(--white);
+    font-family: var(--fonts);
+}
+
+nav  ul {
+    display: flex;
+    list-style: none;
+    gap: 1rem;
+    padding: 0;
+    margin: 0;
+}
+
+
+nav a {
+    color: var(--white);
+    font-family: var(--fonts);
+    text-decoration: none;
+}
+
+
+img {
+    height: 150px;
+    width: 100px;
+}
