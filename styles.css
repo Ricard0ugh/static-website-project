@@ -94,8 +94,8 @@ main > section {
 }
 
 #bar-section a:hover {
-    background-color:yellow;
-    transition: background-color 0.8s ease;
+    color: var(--cherry);
+    transition: color 0.8s ease;
 }
 
 .three-row {
@@ -111,6 +111,8 @@ main > section {
     flex: 1;
     border-radius: 20px;
     padding: 1rem;
+    display: flex;
+    flex-direction: column;
 }
 
 .info-cards > img {
@@ -122,16 +124,56 @@ main > section {
     object-fit: cover;    
 }
 
+.info-cards p:last-child {
+    margin-top: auto;
+}
+
 .info-cards p, 
 .info-cards h4 {
     font-family: var(--fonts)
 
 }
 
-/* 
-width: 100%;
-height: 150px;
-object-fit: cover;
-    */
+#page-bar ul {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    margin: 0;
 
+}
 
+#page-bar li {
+    margin: 0;
+}
+
+#page-bar a {
+    display: inline-block;
+    padding: 1rem 1.3rem;
+    font-family: var(--fonts);
+    color: var(--gray);
+    text-decoration: none;
+    font-style: italic;
+    font-weight: 400;
+
+    border-top: 2px solid transparent;
+    transition: color .3s ease, border-top 0.3s ease;
+}
+
+#page-bar a:hover {
+    border-top: 2px solid var(--cherry);
+    color: var(--cherry);
+}
+
+footer {
+    display: flex;
+    margin: 3rem 0;
+    padding: 1rem 6rem 0 6rem;
+    border-top: 1px solid var(--gray);
+
+}
+
+footer p {
+    color: var(--white);
+    font-family: var(--fonts);
+    font-weight: 400;
+}
