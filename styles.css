@@ -41,8 +41,33 @@ nav a {
     text-decoration: none;
 }
 
-
-img {
-    height: 150px;
-    width: 100px;
+main > section { 
+    padding: 1rem 0; 
 }
+
+#front-page {
+    text-align: center;
+    margin: 1rem 0;
+
+}
+
+#front-page img {
+    display: block;
+    margin: 1rem auto;
+}
+
+#front-page h2 {
+    font-family: var(--fonts);
+    color: var(--cherry);
+    font-weight: 400;
+    font-style: italic;
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+#front-page h3 {
+    font-family: var(--fonts);
+    color: var(--white);
+    font-weight: 350;
+}
+
